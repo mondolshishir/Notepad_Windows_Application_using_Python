@@ -1,5 +1,4 @@
 
-
 import tkinter as tk
 from tkinter import ttk
 from tkinter import  font, colorchooser, filedialog, messagebox
@@ -20,6 +19,8 @@ exit_icon = tk.PhotoImage(file="icons/exit.png")
 
 file = tk.Menu(main_menu, tearoff=False)
 main_menu.add_cascade(label="File", menu=file)
+
+file.add_cascade(label="New", image=new_icon, compound=tk.LEFT, accelerator="Ctrl+n")
 main_application.config(menu=main_menu)
 
 

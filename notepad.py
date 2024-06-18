@@ -21,6 +21,7 @@ file = tk.Menu(main_menu, tearoff=False)
 main_menu.add_cascade(label="File", menu=file)
 
 file.add_cascade(label="New", image=new_icon, compound=tk.LEFT, accelerator="Ctrl+n")
+file.add_cascade(label="Open", image=open_icon, compound=tk.LEFT, accelerator="Ctrl+o")
 main_application.config(menu=main_menu)
 
 
